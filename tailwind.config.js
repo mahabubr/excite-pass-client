@@ -12,7 +12,7 @@ export default withMT({
   theme: {
     extend: {},
     colors: {
-      primary: "#03001C",
+      primary: "#050112",
       secondary: "#301E67",
       accent: "#5B8FB9",
       light: "#B6EADA",
