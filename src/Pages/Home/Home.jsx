@@ -1,3 +1,4 @@
+import AboutLiveEvent from "../../Component/Home/AboutLiveEvent";
 import Banner from "../../Component/Home/Banner";
 import EntertainmentGuide from "../../Component/Home/EntertainmentGuide";
 import EventSchedule from "../../Component/Home/EventSchedule";
@@ -12,6 +13,7 @@ const Home = () => {
       <UpcomingEvents />
       <EntertainmentGuide />
       <EventSchedule />
+      <AboutLiveEvent />
     </div>
   );
 };
