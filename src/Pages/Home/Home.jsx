@@ -5,6 +5,7 @@ import EventSchedule from "../../Component/Home/EventSchedule";
 import EventSponsor from "../../Component/Home/EventSponsor";
 import Search from "../../Component/Home/Search";
 import Subscription from "../../Component/Home/Subscription";
+import TimeCountdown from "../../Component/Home/TimeCountdown";
 import UpcomingEvents from "../../Component/Home/UpcomingEvents";
 import WhyChoose from "../../Component/Home/WhyChoose";
 
@@ -16,6 +17,7 @@ const Home = () => {
       <UpcomingEvents />
       <EntertainmentGuide />
       <EventSchedule />
+      <TimeCountdown />
       <AboutLiveEvent />
       <WhyChoose />
       <Subscription />

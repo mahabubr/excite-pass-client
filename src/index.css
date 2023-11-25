@@ -8,3 +8,29 @@ body {
   background-color: #010112;
   font-family: "Roboto Mono", monospace;
 }
+
+.outline-text {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: orangered;
+  font-size: 10rem;
+  user-select: none;
+  /* text-shadow: 2px 2px 4px rgba(255, 69, 0, 0.5);  */
+  position: relative;
+  animation: moveBorder 4s linear infinite; /* Change animation duration and type as needed */
+}
+
+@keyframes moveBorder {
+  0% {
+    text-shadow: 2px 2px 4px rgba(255, 69, 0, 0.5);
+    transform: scale(1);
+  }
+  50% {
+    text-shadow: 4px 4px 6px rgba(255, 69, 0, 0.7);
+    transform: scale(1.05);
+  }
+  100% {
+    text-shadow: 2px 2px 4px rgba(255, 69, 0, 0.5);
+    transform: scale(1);
+  }
+}

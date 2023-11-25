@@ -12,36 +12,36 @@ const EventSponsor = () => {
   return (
     <div className="text-white mt-20 container w-11/12 mx-auto">
       <Title content="Our Event Sponsors" />
-      <div className="mt-10 grid grid-cols-5 place-items-center gap-10 text-5xl ">
-        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group">
+      <div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-items-center gap-10 text-5xl ">
+        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group  backdrop-blur-lg bg-white/20">
           <FaBattleNet className="group-hover:animate-spin" />
         </div>
-        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group">
-          <FaInternetExplorer className="group-hover:animate-spin"/>
+        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group backdrop-blur-lg bg-white/20">
+          <FaInternetExplorer className="group-hover:animate-spin" />
         </div>
-        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group">
-          <FaMagnet className="group-hover:animate-spin"/>
+        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group backdrop-blur-lg bg-white/20">
+          <FaMagnet className="group-hover:animate-spin" />
         </div>
-        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group">
-          <FaAd className="group-hover:animate-spin"/>
+        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group backdrop-blur-lg bg-white/20">
+          <FaAd className="group-hover:animate-spin" />
         </div>
-        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group">
-          <DiGoogleAnalytics className="group-hover:animate-spin"/>
+        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group backdrop-blur-lg bg-white/20">
+          <DiGoogleAnalytics className="group-hover:animate-spin" />
         </div>
-        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group">
-          <BsAirplaneEnginesFill className="group-hover:animate-spin"/>
+        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group backdrop-blur-lg bg-white/20">
+          <BsAirplaneEnginesFill className="group-hover:animate-spin" />
         </div>
-        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group">
-          <GrBitcoin className="group-hover:animate-spin"/>
+        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group backdrop-blur-lg bg-white/20">
+          <GrBitcoin className="group-hover:animate-spin" />
         </div>
-        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group">
-          <ImAngry2 className="group-hover:animate-spin"/>
+        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group backdrop-blur-lg bg-white/20">
+          <ImAngry2 className="group-hover:animate-spin" />
         </div>
-        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group">
-          <Si3M className="group-hover:animate-spin"/>
+        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group backdrop-blur-lg bg-white/20">
+          <Si3M className="group-hover:animate-spin" />
         </div>
-        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group">
-          <TiChartPie className="group-hover:animate-spin"/>
+        <div className="border border-dashed p-8 rounded-full hover:bg-white hover:text-primary duration-500 group backdrop-blur-lg bg-white/20">
+          <TiChartPie className="group-hover:animate-spin" />
         </div>
       </div>
     </div>
