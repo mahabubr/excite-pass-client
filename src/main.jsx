@@ -9,9 +9,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "moment-duration-format";
 
-
-
-
 const client = new ApolloClient({
   uri: "http://localhost:4000/",
   cache: new InMemoryCache(),
@@ -24,6 +21,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <App />
       </ThemeProvider>
     </ApolloProvider>
-    ,
   </React.StrictMode>
 );
