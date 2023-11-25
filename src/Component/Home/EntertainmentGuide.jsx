@@ -65,7 +65,7 @@ const EntertainmentGuide = () => {
                   <img
                     src={cat.img}
                     alt=""
-                    className="h-[300px] w-full object-cover rounded-md brightness-[0.3] hover:brightness-50 duration-300 cursor-pointer"
+                    className="h-[300px] w-full object-cover rounded-md brightness-[0.3] hover:brightness-50 duration-300 cursor-grab"
                   />
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <p className="text-white font-bold">{cat.title}</p>

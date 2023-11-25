@@ -1,6 +1,7 @@
 import { Button } from "@material-tailwind/react";
 import Title from "../Shared/Title/Title";
-import { FaLocationDot } from "react-icons/fa6";
+import { CiCalendarDate, CiLocationOn, CiMicrophoneOn } from "react-icons/ci";
+import { GoPeople } from "react-icons/go";
 
 const AboutLiveEvent = () => {
   return (
@@ -34,24 +35,26 @@ const AboutLiveEvent = () => {
         </div>
         <div className="grid grid-cols-2 bg-white text-primary  rounded-md w-full h-full border border-dashed border-primary">
           <div className="flex justify-center items-center flex-col space-y-2 p-6 border-r border-b border-primary  border-dashed">
-            <FaLocationDot size={50} className="text-accent" />
+            <CiLocationOn size={50} className="text-accent" />
             <h2 className="font-bold text-xl text-secondary">Massachusetts</h2>
             <p className="text-gray-500">United State</p>
           </div>
           <div className="flex justify-center items-center flex-col space-y-2 p-6 border-b border-primary  border-dashed">
-            <FaLocationDot size={50} className="text-accent" />
-            <h2 className="font-bold text-xl text-secondary">Massachusetts</h2>
-            <p className="text-gray-500">United State</p>
+            <CiCalendarDate size={50} className="text-accent" />
+            <h2 className="font-bold text-xl text-secondary">
+              2nd - 8th March
+            </h2>
+            <p className="text-gray-500">2024</p>
           </div>
           <div className="flex justify-center items-center flex-col space-y-2 p-6  border-primary  border-dashed border-r">
-            <FaLocationDot size={50} className="text-accent " />
-            <h2 className="font-bold text-xl text-secondary">Massachusetts</h2>
-            <p className="text-gray-500">United State</p>
+            <CiMicrophoneOn size={50} className="text-accent " />
+            <h2 className="font-bold text-xl text-secondary">36 Speakers</h2>
+            <p className="text-gray-500">Experts</p>
           </div>
           <div className="flex justify-center items-center flex-col space-y-2 p-6  border-primary  border-dashed">
-            <FaLocationDot size={50} className="text-accent" />
-            <h2 className="font-bold text-xl text-secondary">Massachusetts</h2>
-            <p className="text-gray-500">United State</p>
+            <GoPeople size={50} className="text-accent" />
+            <h2 className="font-bold text-xl text-secondary">3000 Seats</h2>
+            <p className="text-gray-500">Confirm</p>
           </div>
         </div>
       </div>
