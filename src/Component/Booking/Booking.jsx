@@ -30,6 +30,9 @@ const Booking = ({ singleData, ticketCount }) => {
     parseFloat(totalPrice) + parseFloat(taxPrice)
   ).toFixed(2);
 
+  const handleDownload = async () => {
+    console.log("object");
+  };
   return (
     <div>
       <div className="bg-secondary p-4 font-bold rounded-t-md flex items-center gap-3">
@@ -134,6 +137,7 @@ const Booking = ({ singleData, ticketCount }) => {
               color="deep-orange"
               size="sm"
               className="flex justify-center items-center gap-4 w-full mt-6"
+              onClick={handleDownload}
             >
               Book a Ticket <MdArrowOutward size={20} />
             </Button>

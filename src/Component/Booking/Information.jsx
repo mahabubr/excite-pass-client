@@ -8,6 +8,7 @@ import { IoPersonCircleSharp } from "react-icons/io5";
 import { TbGenderAndrogyne } from "react-icons/tb";
 import { GiWorld } from "react-icons/gi";
 import { MdAlternateEmail } from "react-icons/md";
+import Ticket from "./Tickets";
 
 const Information = ({ setTicketCount, ticketCount }) => {
   const renderAdditionalForms = () => {
@@ -107,6 +108,7 @@ const Information = ({ setTicketCount, ticketCount }) => {
         </div>
       </div>
       <div>{renderAdditionalForms()}</div>
+      <Ticket />
     </div>
   );
 };
