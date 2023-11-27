@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@material-tailwind/react";
 import Information from "../../Component/Booking/Information";
 import Booking from "../../Component/Booking/Booking";
 import { useState } from "react";
+import { usePDF } from "react-to-pdf";
 
 const GET_SINGLE_EVENTS = gql`
   query singleEvents($singleEventId: ID!) {
@@ -32,6 +33,7 @@ const Events = () => {
   });
 
   const [ticketCount, setTicketCount] = useState("0");
+  const { toPDF, targetRef } = usePDF({ filename: "page.pdf" });
 
   const singleData = data?.SingleEvent;
 
@@ -66,15 +68,20 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <div className="container w-11/12 mx-auto mt-20 grid grid-cols-6 gap-10">
-        <div className="col-span-4">
+      <div className="container w-11/12 mx-auto mt-20 grid lg:grid-cols-6 gap-10">
+        <div className="lg:col-span-4">
           <Information
             setTicketCount={setTicketCount}
             ticketCount={ticketCount}
+            targetRef={targetRef}
           />
         </div>
-        <div className="col-span-2">
-          <Booking singleData={singleData} ticketCount={ticketCount} />
+        <div className="lg:col-span-2">
+          <Booking
+            toPDF={toPDF}
+            singleData={singleData}
+            ticketCount={ticketCount}
+          />
         </div>
       </div>
     </div>

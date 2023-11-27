@@ -8,9 +8,8 @@ import { IoPersonCircleSharp } from "react-icons/io5";
 import { TbGenderAndrogyne } from "react-icons/tb";
 import { GiWorld } from "react-icons/gi";
 import { MdAlternateEmail } from "react-icons/md";
-import Ticket from "./Tickets";
 
-const Information = ({ setTicketCount, ticketCount }) => {
+const Information = ({ setTicketCount, ticketCount, targetRef }) => {
   const renderAdditionalForms = () => {
     const forms = [];
 
@@ -24,7 +23,7 @@ const Information = ({ setTicketCount, ticketCount }) => {
           <div className="bg-white text-primary p-6 rounded-b-md space-y-4">
             <div className="flex items-center gap-4">
               <IoPersonCircleSharp size={35} />
-              <div className="flex justify-center items-center w-full gap-4">
+              <div className="lg:flex space-y-4 lg:space-y-0 justify-center items-center w-full gap-4">
                 <Input variant="outlined" label="First Name" />
                 <Input variant="outlined" label="Last Name" />
               </div>
@@ -51,7 +50,7 @@ const Information = ({ setTicketCount, ticketCount }) => {
   };
 
   return (
-    <div className="col-span-4">
+    <div ref={targetRef} className="">
       <div className="bg-secondary p-4 font-bold rounded-t-md flex items-center gap-3">
         <FaPersonDotsFromLine size={20} />
         <p> Person 1: Primary Contact</p>
@@ -72,7 +71,7 @@ const Information = ({ setTicketCount, ticketCount }) => {
         </div>
         <div className="flex items-center gap-4">
           <IoPersonCircleSharp size={35} className="text-secondary" />
-          <div className="flex justify-center items-center w-full gap-4">
+          <div className="lg:flex space-y-4 lg:space-y-0 justify-center items-center w-full gap-4">
             <Input variant="outlined" label="First Name" />
             <Input variant="outlined" label="Last Name" />
           </div>
@@ -86,7 +85,7 @@ const Information = ({ setTicketCount, ticketCount }) => {
             </Select>
           </div>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="lg:flex space-y-4 lg:space-y-0 items-center gap-4">
           <div className="flex justify-center items-center w-full gap-4">
             <GiWorld size={35} className="text-secondary" />
             <Input variant="outlined" label="Nationality" />
@@ -108,7 +107,6 @@ const Information = ({ setTicketCount, ticketCount }) => {
         </div>
       </div>
       <div>{renderAdditionalForms()}</div>
-      <Ticket />
     </div>
   );
 };

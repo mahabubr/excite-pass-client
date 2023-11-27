@@ -1,3 +1,4 @@
+/* eslint-disable react/no-deprecated */
 import { MdPaid, MdDiscount, MdArrowOutward } from "react-icons/md";
 import { FaInfoCircle } from "react-icons/fa";
 import { Button, Input } from "@material-tailwind/react";
@@ -7,7 +8,7 @@ import { RiMastercardFill } from "react-icons/ri";
 import { FaCreditCard } from "react-icons/fa";
 import { useState } from "react";
 
-const Booking = ({ singleData, ticketCount }) => {
+const Booking = ({ singleData, ticketCount, toPDF }) => {
   const [payType, setPayType] = useState("");
   const [couponData, setCouponData] = useState("");
 
@@ -30,9 +31,6 @@ const Booking = ({ singleData, ticketCount }) => {
     parseFloat(totalPrice) + parseFloat(taxPrice)
   ).toFixed(2);
 
-  const handleDownload = async () => {
-    console.log("object");
-  };
   return (
     <div>
       <div className="bg-secondary p-4 font-bold rounded-t-md flex items-center gap-3">
@@ -72,7 +70,7 @@ const Booking = ({ singleData, ticketCount }) => {
         </div>
         <div className="border-b pb-5 border-primary border-dashed">
           <h2 className="font-bold text-lg text-accent">Your Preferred Bank</h2>
-          <div className="grid grid-cols-2 place-items-center gap-4 mt-4">
+          <div className="grid lg:grid-cols-2 place-items-center gap-4 mt-4">
             <ImPaypal
               onClick={() => setPayType("Paypal")}
               className="text-white bg-gray-900 w-full p-3 text-5xl rounded-md cursor-pointer hover:bg-indigo-800 duration-300"
@@ -137,7 +135,7 @@ const Booking = ({ singleData, ticketCount }) => {
               color="deep-orange"
               size="sm"
               className="flex justify-center items-center gap-4 w-full mt-6"
-              onClick={handleDownload}
+              onClick={() => toPDF()}
             >
               Book a Ticket <MdArrowOutward size={20} />
             </Button>
