@@ -150,14 +150,16 @@ const Navbar = () => {
               <FaLinkedin />
             </a>
           </div>
-          <Button
-            variant="gradient"
-            color="deep-orange"
-            size="sm"
-            className="flex justify-center items-center gap-4"
-          >
-            Book a Ticket <MdArrowOutward size={20} />
-          </Button>
+          <Link to={`/category/6560bbafaa4dfc37eb49c745`}>
+            <Button
+              variant="gradient"
+              color="deep-orange"
+              size="sm"
+              className="flex justify-center items-center gap-4"
+            >
+              Book a Ticket <MdArrowOutward size={20} />
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>

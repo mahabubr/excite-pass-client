@@ -61,7 +61,6 @@ const Events = () => {
             <div className="mt-10">
               <Breadcrumbs>
                 <Link to="/">Home</Link>
-                <Link to="/events">Events</Link>
                 <Link>Event</Link>
               </Breadcrumbs>
             </div>

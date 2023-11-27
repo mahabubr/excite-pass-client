@@ -30,7 +30,7 @@ const EventCard = ({ event }) => {
       </div>
       <div className="lg:col-span-1 lg:border-l  border-primary border-dashed">
         <div className="flex justify-center items-center h-full w-full">
-          <Link to={`/event/${event._id}`} >
+          <Link to={`/event/${event._id}`}>
             <Button variant="gradient" color="deep-orange">
               Details
             </Button>
